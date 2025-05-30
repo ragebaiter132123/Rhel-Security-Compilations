@@ -15,7 +15,6 @@ while true; do
 
     if [ "$current_count" -ne "$prev_count" ]; then
         echo -e "${BLINK}${BOLD}${RED}⚠️ CONNECTION COUNT CHANGED: ${YELLOW}${prev_count} → ${current_count}${NC}"
-        beep
         prev_count=$current_count
     fi
 
